@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "rethink"
 include(":app")
+include(":data")
+include(":domain")
