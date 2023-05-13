@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 kapt {
@@ -65,6 +66,9 @@ dependencies {
     implementation("androidx.compose.material:material")
     implementation("androidx.navigation:navigation-compose:2.5.3")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+
+    implementation("com.google.dagger:hilt-android:2.45")
+    kapt("com.google.dagger:hilt-compiler:2.45")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
