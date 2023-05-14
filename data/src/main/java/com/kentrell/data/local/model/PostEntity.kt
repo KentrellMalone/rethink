@@ -8,8 +8,7 @@ import io.realm.kotlin.types.annotations.PrimaryKey
 class PostEntity : RealmObject {
     @PrimaryKey
     var id: Int = 0
+    var title: String = ""
     var body: String = ""
-    var email: String = ""
-    var name: String = ""
     var comments: RealmList<CommentEntity> = realmListOf()
 }

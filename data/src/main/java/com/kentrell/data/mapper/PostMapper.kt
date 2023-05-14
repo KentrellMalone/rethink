@@ -13,9 +13,9 @@ class PostMapper @Inject constructor(
     operator fun invoke(response: PostResponse): Post {
         return Post(
             id = response.id,
+            title = response.title,
             body = response.body,
-            email = response.email,
-            name = response.name,
+            userId = response.userId,
         )
     }
 
@@ -23,8 +23,7 @@ class PostMapper @Inject constructor(
         return Post(
             id = entity.id,
             body = entity.body,
-            email = entity.email,
-            name = entity.name,
+            title = entity.title,
             comments = entity.comments.map { commentMapper(it) },
         )
     }
@@ -33,8 +32,7 @@ class PostMapper @Inject constructor(
         return PostEntity().apply {
             id = type.id
             body = type.body
-            email = type.email
-            name = type.name
+            title = type.title
             comments = realmListOf(*type.comments.map { commentMapper(it) }.toTypedArray())
         }
     }

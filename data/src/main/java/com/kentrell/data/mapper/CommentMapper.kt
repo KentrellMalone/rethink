@@ -13,6 +13,7 @@ class CommentMapper @Inject constructor() {
             body = response.body,
             email = response.email,
             name = response.name,
+            postId = response.postId,
         )
     }
 

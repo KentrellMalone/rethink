@@ -5,14 +5,12 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PostResponse(
-    @SerialName("body")
-    val body: String,
-    @SerialName("email")
-    val email: String,
     @SerialName("id")
     val id: Int,
-    @SerialName("name")
-    val name: String,
-    @SerialName("postId")
-    val postId: Int,
+    @SerialName("title")
+    val title: String,
+    @SerialName("body")
+    val body: String,
+    @SerialName("userId")
+    val userId: Int,
 )
