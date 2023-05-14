@@ -1,4 +1,4 @@
-package com.kentrell.rethink.ui.theme
+package com.kentrell.ui_common.theme
 
 import androidx.compose.ui.graphics.Color
 

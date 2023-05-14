@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.kentrell.rethink.ui.theme.RethinkTheme
+import com.kentrell.ui_common.theme.RethinkTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

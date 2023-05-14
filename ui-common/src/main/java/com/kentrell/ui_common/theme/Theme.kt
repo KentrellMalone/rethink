@@ -1,4 +1,4 @@
-package com.kentrell.rethink.ui.theme
+package com.kentrell.ui_common.theme
 
 import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -39,6 +39,7 @@ fun RethinkTheme(
     }
 
     MaterialTheme(
+        colors = colors,
         content = content
     )
 }
