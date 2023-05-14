@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("kotlinx-serialization")
+    id("io.realm.kotlin")
 }
 
 kapt {
@@ -55,4 +56,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+
+    implementation("io.realm.kotlin:library-base:1.8.0")
 }
