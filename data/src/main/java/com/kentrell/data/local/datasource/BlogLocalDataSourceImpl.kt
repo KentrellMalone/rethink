@@ -4,6 +4,7 @@ import com.kentrell.data.local.model.CommentEntity
 import com.kentrell.data.local.model.PostEntity
 import com.kentrell.data.local.model.UserEntity
 import io.realm.kotlin.Realm
+import io.realm.kotlin.UpdatePolicy
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
@@ -16,7 +17,7 @@ class BlogLocalDataSourceImpl @Inject constructor(
     override suspend fun insertUsers(posts: List<UserEntity>) {
         realm.writeBlocking {
             posts.forEach {
-                copyToRealm(it)
+                copyToRealm(it, updatePolicy = UpdatePolicy.ALL)
             }
         }
     }
